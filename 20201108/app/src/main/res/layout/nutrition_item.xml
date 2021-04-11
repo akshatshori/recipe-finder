@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipChildren="false"
+
+    android:clipToPadding="false">
+
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/nutrition_folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/nutrition_cell_content_view"
+            android:layout_width="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_height="180dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="80dp">
+
+
+                <TextView
+                    android:id="@+id/nutrition_key1_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="20g"
+                    android:layout_marginTop="55dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/nutrition_key2_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginTop="55dp"
+                    android:gravity="center"
+                    android:text="10g" />
+
+                <TextView
+                    android:id="@+id/nutrition_key3_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:layout_marginTop="55dp"
+                    android:text="0g" />
+
+                <TextView
+                    android:id="@+id/nutrition_key4_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="10g"
+                    android:layout_marginTop="55dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="100dp"
+                >
+
+                <TextView
+                    android:id="@+id/nutrition_value1_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Calcium" />
+
+                <TextView
+                    android:id="@+id/nutrition_value2_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Vitamin D" />
+
+                <TextView
+                    android:id="@+id/nutrition_value3_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Vitamin A" />
+
+                <TextView
+                    android:id="@+id/nutrition_value4_txtview"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Hydrogen" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nutrition_cell_title_view"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/holo_blue_light"
+            android:layout_height="100dp">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/nutrition_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                >
+            </androidx.appcompat.widget.AppCompatImageView>
+            <TextView
+                android:id="@+id/nutrition_title_txtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="RECIPE" />
+
+
+
+        </LinearLayout>
+
+
+
+    </com.ramotion.foldingcell.FoldingCell>
+</LinearLayout>
+
